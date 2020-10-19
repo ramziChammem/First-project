@@ -246,10 +246,46 @@ h3 {
 
   display: none;
 }
+.row {
+  margin-top: 5rem;
+  text-align: center;
+}
 .card {
-  background-color: lightskyblue;
+  display: inline-block;
   float: left;
   margin: 10px;
-  height: 200px;
-  width: 150px;
+  height: 160px;
+  width: 110px;
+  background-color: grey;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: inset 0px 0px 0px 3px blueviolet;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: pink;
+}
+.lime {
+  background-color: lime;
+}
+.cyan {
+  background-color: cyan;
+}
+.indigo {
+  background-color: indigo;
+}
+.lawngreen {
+  background-color: lawngreen;
+}
+.color-hidden {
+  background-color: grey;
 }
