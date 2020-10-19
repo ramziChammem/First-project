@@ -24,3 +24,5 @@ else if ( email !== "ramzichammem125@gmail.com" || password !== "rebootkamp"){
         },1000)
     }
 }
+$("#stImage").attr("src", "https://vistapointe.net/images/dice-1.jpg")
+$("#ndImage").attr("src", "https://www.auntannie.com/GamesToMake/MatchCards/MatchCardsPlay.gif")

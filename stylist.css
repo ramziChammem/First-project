@@ -62,3 +62,80 @@ span {
 #otherPage1 {
   display: none;
 }
+#stImage {
+  background-color: thistle;
+  width: 25rem;
+  height: 15rem;
+  margin-top: 5rem;
+  margin-left: 34rem;
+  border-radius: 20px;
+}
+#diceBtn {
+  margin-left: 38.5rem;
+  padding: 1.2rem;
+  width: 250px;
+  font-size: 1.6rem;
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-radius: 25px;
+  color: black;
+  background-color: #ff4500;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#ndImage {
+  background-color: thistle;
+  width: 25rem;
+  height: 15rem;
+  margin-top: 5rem;
+  margin-left: 34rem;
+  border-radius: 20px;
+}
+
+#flipCardBtn {
+  margin-left: 38rem;
+  padding: 1.2rem;
+  width: 250px;
+  font-size: 1.6rem;
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 2rem;
+  border-radius: 25px;
+  color: black;
+  background-color: #ff4500;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#backBtnn {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -moz-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -ms-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -o-linear-gradient(top, #ff0000, #7a0101);
+  background-image: linear-gradient(to bottom, #ff0000, #7a0101);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 5px 3px 4px #000000;
+  font-family: Arial;
+  color: #fcfcfc;
+  font-size: 31px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 42.2rem;
+  margin-top: 3rem;
+}
+#backBtnn:hover {
+  background: #eaff00;
+  background-image: -webkit-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -moz-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -ms-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -o-linear-gradient(top, #eaff00, #302f0a);
+  background-image: linear-gradient(to bottom, #eaff00, #302f0a);
+  text-decoration: none;
+}
