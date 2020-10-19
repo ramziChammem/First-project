@@ -17,12 +17,12 @@
     <title>Welcome To My Play Ground</title>
 </head>
 <body>
-    <div id= "titleDiv">
-    <h1><span>Play</span> Ground</h1>
-    </div>
+    
+    <h1 class="title"><span>Play</span> Ground</h1>
+    
     <div>
         <div id= "logIn">
-            <h2>Sign In</h2>
+            <h2 id= "signIn">Sign In</h2>
             <div class= "inputDiv">
                 <div>
                     <input
@@ -38,6 +38,11 @@
                       id="pass"
                       placeholder="Password"
                     />
+                    <center>
+                        <button class="btn btn-danger" onclick="validate()" id="log">
+                          LogIn
+                        </button>
+                      </center>
             </div>
         </div>
     </div>

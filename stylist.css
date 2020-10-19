@@ -7,11 +7,55 @@ body {
   background-image: url("https://previews.123rf.com/images/maikikapetan25/maikikapetan251804/maikikapetan25180400016/99428541-dice-3d-model-high-resolution-3d-render.jpg");
   background-size: cover;
 }
-h1 {
-  color: rgb(165, 120, 167);
-  font-size: 10rem;
+.title {
+  color: white;
+  font-size: 7rem;
   text-align: center;
 }
 span {
   color: rgb(255, 179, 80);
+}
+#signIn {
+  text-align: center;
+  font-size: 4rem;
+  color: #ff4500;
+}
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.inputt {
+  padding: 0.5rem 1rem;
+  height: 50px;
+  outline: none;
+  background-color: #fff;
+  width: 450px;
+  font-size: 1.15rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+  border: none;
+}
+#logIn {
+  margin-top: 5rem;
+}
+#pass {
+  margin-top: 20px;
+}
+#log {
+  padding: 1.2rem;
+  width: 150px;
+  font-size: 1.6rem;
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 3rem;
+  border-radius: 25px;
+  color: black;
+  background-color: #ff4500;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border: none;
 }
