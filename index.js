@@ -52,12 +52,12 @@ function playGame(){
     image2.src =  randomImageTwoPath;
  
     if (randomNumberOne > randomNumberTwo){
-        document.querySelector("#GL").innerHTML="Player One Wins!"
+        document.querySelector("#GL").innerHTML="💖Player One Wins!💖"
         
         
     }
     else if (randomNumberOne < randomNumberTwo){
-        document.querySelector("#GL").innerHTML="Player Two Wins!"
+        document.querySelector("#GL").innerHTML="💖Player Two Wins!💖"
 
     }
     else {

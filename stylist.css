@@ -203,3 +203,32 @@ h3 {
   background-image: linear-gradient(to bottom, #c4ff00, #3d3c1c);
   text-decoration: none;
 }
+#backBtn {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -moz-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -ms-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -o-linear-gradient(top, #ff0000, #7a0101);
+  background-image: linear-gradient(to bottom, #ff0000, #7a0101);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 5px 3px 4px #000000;
+  font-family: Arial;
+  color: #fcfcfc;
+  font-size: 31px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 43.4rem;
+  margin-top: 3rem;
+}
+
+#backBtn:hover {
+  background: #eaff00;
+  background-image: -webkit-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -moz-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -ms-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -o-linear-gradient(top, #eaff00, #302f0a);
+  background-image: linear-gradient(to bottom, #eaff00, #302f0a);
+  text-decoration: none;
+}
