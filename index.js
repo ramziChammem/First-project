@@ -27,7 +27,7 @@ else if ( email !== "ramzichammem125@gmail.com" || password !== "rebootkamp"){
 function valid(){
     $("#otherPage1").fadeOut(1000)
     setTimeout(function(){
-        $("#login").fadeIn(1000)
+        $("#logIn").fadeIn(1000)
     }, 1000)
 }
 function valid1(){
@@ -73,3 +73,54 @@ function valid2(){
     }, 1000)
     
 }
+function valid3(){
+    $("#otherPage1").fadeOut(1000)
+    setTimeout(function(){
+        $(".flipCardGame").fadeIn(1000)
+    }, 1000)
+}
+
+$(document).ready(function () {
+    var app = {
+        cards: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6],
+        init: function () {
+          app.shuffle();
+
+        },
+        shuffle: function(){
+          var random = 0;
+          var temp = 0;
+          for ( i = 1; i < app["cards"].length; i++){
+            random = Math.round(Math.random() * i);
+            temp = app.cards[i];
+            app.cards[i] = app.cards[random];
+            app.cards[random] = temp;
+          
+          }
+          app.assignCards();
+          console.log(app.cards)
+        },
+        assignCards: function(){
+          $('.card').each(function(index){
+            $(this).attr('data-card-value', app.cards[index]);
+          });
+          app.clickHandlers();
+        },
+      clickHandlers: function () {
+        $(".card").on("click", function(){
+            $(this).html("<p>"+$(this).data("cardValue")+"<p>").addClass("checked")
+            app.checkSimilars();
+        });
+        },
+        checkSimilars: function() {
+        if($(".checked").length === 2)
+            if($(".cheked").first().data("cardValue") === $(".checked").last().data("cardValue")) {
+                $(".checked").each().removeClass("checked");
+            }
+            else{
+                
+            }
+        }
+    };
+    app.init();
+})

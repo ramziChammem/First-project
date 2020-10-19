@@ -58,7 +58,9 @@ span {
   display: flex;
   justify-content: center;
   border: none;
+  cursor: pointer;
 }
+
 #otherPage1 {
   display: none;
 }
@@ -85,6 +87,7 @@ span {
   display: flex;
   justify-content: center;
   border: none;
+  cursor: pointer;
 }
 #ndImage {
   background-color: thistle;
@@ -110,6 +113,7 @@ span {
   display: flex;
   justify-content: center;
   border: none;
+  cursor: pointer;
 }
 #backBtnn {
   background: #ff0000;
@@ -129,6 +133,7 @@ span {
   text-decoration: none;
   margin-left: 42.2rem;
   margin-top: 3rem;
+  cursor: pointer;
 }
 #backBtnn:hover {
   background: #eaff00;
@@ -146,6 +151,7 @@ span {
   color: #00ffff;
   font-family: "Lobster", cursive;
   font-size: 80px;
+  text-align: center;
 }
 h3 {
   color: lime;
@@ -192,6 +198,7 @@ h3 {
   padding: 10px 20px 10px 20px;
   margin-left: 40rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .butn:hover {
@@ -221,6 +228,7 @@ h3 {
   text-decoration: none;
   margin-left: 43.4rem;
   margin-top: 3rem;
+  cursor: pointer;
 }
 
 #backBtn:hover {
@@ -231,4 +239,17 @@ h3 {
   background-image: -o-linear-gradient(top, #eaff00, #302f0a);
   background-image: linear-gradient(to bottom, #eaff00, #302f0a);
   text-decoration: none;
+}
+.flipCardGame {
+  margin-left: 15.5rem;
+  width: 1080px;
+
+  display: none;
+}
+.card {
+  background-color: lightskyblue;
+  float: left;
+  margin: 10px;
+  height: 200px;
+  width: 150px;
 }
