@@ -61,7 +61,8 @@
           </div>
           <div class="btn_div">
             <button id="flipCardBtn" onclick="valid3()">Flip Card Game</button>
-            <button id= "backBtnn" onclick= "valid()">Back</button>
+            <button id = "BK" onclick="back()">Back</button>
+            
           </div>
     </div>
     <div id= "otherPageDice">
@@ -78,29 +79,49 @@
     </div>
     <div class="flipCardGame">
        <div class="row">
-           <div class="card red color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card cyan color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card pink color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card cyan color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "red" class="card red color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "cyan" class="card cyan color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "pink" class="card pink color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "cyan" class="card cyan color-hidden" onclick= "clickCard(event)"></div>
        </div>
        <div class="row">
-           <div class="card yellow color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card blue color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card green color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card lawngreen color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "lime" class="card lime color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "blue" class="card blue color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "yellow" class="card yellow color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "white" class="card white color-hidden" onclick= "clickCard(event)"></div>
        </div>
        <div class="row">
-           <div class="card yellow color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card red color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card indigo color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card lawngreen color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "lime" class="card lime color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "red" class="card red color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "indigo" class="card indigo color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "white" class="card white color-hidden" onclick= "clickCard(event)"></div>
         </div>
        <div class="row">
-           <div class="card green color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card indigo color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card blue color-hidden" onclick= "clickCard(event)"></div>
-           <div class="card pink color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "yellow" class="card yellow color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "indigo" class="card indigo color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "blue" class="card blue color-hidden" onclick= "clickCard(event)"></div>
+           <div data-color= "pink" class="card pink color-hidden" onclick= "clickCard(event)"></div>
        </div> 
+       <div id= "ttt" >
+           <table>
+               <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+               </tr>
+               <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+               </tr>
+               <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+               </tr>
+           </table>
+       </div>
+       <button id = "BK" onclick="back()">Back</button>
 
       </div>
     <script

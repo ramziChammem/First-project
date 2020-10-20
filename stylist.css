@@ -115,6 +115,23 @@ span {
   border: none;
   cursor: pointer;
 }
+#ticBtn {
+  margin-left: 38rem;
+  padding: 1.2rem;
+  width: 250px;
+  font-size: 1.6rem;
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 2rem;
+  border-radius: 25px;
+  color: black;
+  background-color: #ff4500;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
 #backBtnn {
   background: #ff0000;
   background-image: -webkit-linear-gradient(top, #ff0000, #7a0101);
@@ -258,15 +275,24 @@ h3 {
   width: 110px;
   background-color: grey;
   cursor: pointer;
+  border-radius: 8px;
 }
+.card.done {
+  cursor: default;
+}
+.card.done:hover {
+  box-shadow: none;
+  cursor: default;
+}
+
 .card:hover {
   box-shadow: inset 0px 0px 0px 3px blueviolet;
 }
 .red {
   background-color: red;
 }
-.green {
-  background-color: green;
+.yellow {
+  background-color: yellow;
 }
 .blue {
   background-color: blue;
@@ -283,9 +309,47 @@ h3 {
 .indigo {
   background-color: indigo;
 }
-.lawngreen {
-  background-color: lawngreen;
+.white {
+  background-color: white;
 }
 .color-hidden {
   background-color: grey;
+}
+
+#BK {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -moz-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -ms-linear-gradient(top, #ff0000, #7a0101);
+  background-image: -o-linear-gradient(top, #ff0000, #7a0101);
+  background-image: linear-gradient(to bottom, #ff0000, #7a0101);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 5px 3px 4px #000000;
+  font-family: Arial;
+  color: #fcfcfc;
+  font-size: 31px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 42.2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  margin-left: 44.5%;
+}
+#BK:hover {
+  background: #eaff00;
+  background-image: -webkit-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -moz-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -ms-linear-gradient(top, #eaff00, #302f0a);
+  background-image: -o-linear-gradient(top, #eaff00, #302f0a);
+  background-image: linear-gradient(to bottom, #eaff00, #302f0a);
+  text-decoration: none;
+}
+table tr td {
+  width: 90px;
+  height: 90px;
+  border: 3px solid white;
+  font-size: 35px;
+  text-align: center;
 }

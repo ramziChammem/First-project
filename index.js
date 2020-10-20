@@ -61,7 +61,7 @@ function playGame(){
 
     }
     else {
-        document.querySelector("#GL").innerHTML= "Draw!"
+        document.querySelector("#GL").innerHTML= "😜Draw!😜"
     }
 }
 document.querySelector(".butn").addEventListener("click", playGame)
@@ -79,4 +79,74 @@ function valid3(){
         $(".flipCardGame").fadeIn(1000)
     }, 1000)
 }
+$(".card").append("<img></img>")
+
+var clickedCard = null;
+var preventClick = false;
+function clickCard(event) {
+    var target = event.currentTarget;
+    if ( preventClick || target === clickedCard || target.className.includes("done")) {
+        return;
+    }
+    target.className = target.className.replace("color-hidden", '').trim();
+    target.className += " done";
+    if (!clickedCard) {
+        
+        clickedCard = target;
+    }
+    else if (clickedCard) {
+       
+        if(clickedCard.getAttribute("data-color") !== target.getAttribute("data-color")
+        ) {
+            preventClick = true;
+
+            setTimeout(() => {
+                clickedCard.className =
+                 clickedCard.className.replace("done", "").trim() + " color-hidden";
+                target.className =
+                 target.className.replace("done", "").trim() + " color-hidden";
+                 clickedCard = null;
+                 preventClick = false;
+                 
+            }, 500);
+            
+        }
+        else {
+            clickedCard = null;
+            
+        }   
+    }
+
+}
+
+
+
+$("#ttt").css("display", "none");
+$("#otherPage1").append("<img id= 'tic'>");
+$("#tic").attr("src", "https://lh3.googleusercontent.com/7k1wSfnstoNib_lmlfIfFTcHOE4oypb-mmuzvhPLpfFRz55CnNJFagyd6u6G4fFrlDI");
+$("#tic").css("display", "flex");
+$("#tic").css("width", "25rem");
+$("#tic").css("height", "18rem");
+$("#tic").css("align-items", "center");
+$("#tic").css("margin-left", "34rem");
+$("#tic").css("margin-top", "5rem");
+$("#otherPage1").append("<button id='ticBtn'>Tic Tie Toe</button>");
+$("#otherPage1").append("<button id = 'BK'>Back</button>");
+
+$('#BK').on("click", function(){
+    $("#otherPage1").fadeOut(1000)
+    setTimeout(function(){
+        $("#logIn").fadeIn(1000)
+    }, 1000)
+})
+$("#ticBtn").on("click", function(){
+    $("#otherPage1").fadeOut(1000)
+    setTimeout(function(){
+        $("#ttt").fadeIn(1000)
+    }, 1000)
+});
+$("table").css("border-collapse", "collapse");
+$("table").css("border-spacing", "0");
+$("table").css("margin", "10px auto");
+$("table").css("background-color", "#272727");
 
